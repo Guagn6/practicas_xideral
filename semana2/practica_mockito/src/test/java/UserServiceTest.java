@@ -19,7 +19,7 @@ class UserServiceTest {
     private UserServiceMockito userServiceMockito;
 
     @Test
-    public void test1() {
+    public void testCreateUser() {
         UserDto objectMocked = new UserDto(1L, "Prueba");
         UserDto expected = new UserDto(1L, "Prueba");
         Mockito.when(userRepository.createUser("Prueba")).thenReturn(expected);
@@ -34,16 +34,14 @@ class UserServiceTest {
     }
 
     @Test
-    @Disabled
-    public void test2() {
-        UserDto expected = new UserDto(1L, "Prueba");
-        UserService userService = new UserService();
-        final UserDto result = new UserDto(1L, "Prueba");
+    public void testGetUser() {
+        UserDto objectMocked = new UserDto(1L, "Juan");
+        UserDto expected = new UserDto(1L, "Juan");
+        Mockito.when(userRepository.getUser(1L)).thenReturn(expected);
+        final UserDto result = userServiceMockito.getUser(1L);
 
-        assertAll(
-                () -> assertNotEquals(expected.id, result.id, "Prueba por ID"),
-                () -> assertNotEquals(expected.name, result.name, "Prueba por nombre"),
-                () -> assertNotEquals(expected, result, "Prueba por Objeto")
-        );
+        assertEquals(expected, result, "Prueba por Objeto");
+
+        Mockito.verify(userRepository).getUser(1L);
     }
 }

@@ -1,0 +1,13 @@
+=== STUDENT PROCESSING REPORT ===
+Report Date: 2025-08-03T21:55:50.361256100
+Job Status: COMPLETED
+Processing Time: 11961 ms
+Total Records Processed: 94
+Total Records Filtered: 94
+
+--- STATISTICS BY COUNTRY ---
+China: 94
+
+--- STATISTICS BY GENDER ---
+Female: 94
+===================================

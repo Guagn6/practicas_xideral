@@ -1,0 +1,109 @@
+=== CUSTOMER PROCESSING REPORT ===
+Report Date: 2025-08-02T19:02:03.617547900
+Job Status: COMPLETED
+Processing Time: 16457 ms
+Total Records Processed: 497
+Total Records Filtered: 94
+
+--- STATISTICS BY COUNTRY ---
+Cameroon: 3
+Angola: 1
+Malaysia: 5
+Paraguay: 1
+Kazakhstan: 2
+Portugal: 16
+Iceland: 1
+Armenia: 2
+Greece: 3
+Latvia: 1
+South Korea: 1
+Austria: 2
+Morocco: 1
+Iran: 2
+Mali: 1
+Panama: 1
+Guatemala: 3
+Brazil: 31
+Slovenia: 2
+Colombia: 7
+Argentina: 9
+Hungary: 1
+Japan: 11
+Tanzania: 3
+Ukraine: 12
+Ghana: 2
+Zambia: 2
+Belarus: 2
+Mauritius: 2
+Albania: 3
+New Zealand: 1
+Canada: 6
+Senegal: 1
+Finland: 2
+Honduras: 1
+Palestinian Territory: 1
+Italy: 1
+South Africa: 5
+Macedonia: 3
+Georgia: 1
+Aland Islands: 1
+Democratic Republic of the Congo: 1
+Peru: 6
+Ethiopia: 1
+Germany: 1
+Afghanistan: 2
+United States: 25
+Sao Tome and Principe: 1
+Madagascar: 2
+Ivory Coast: 1
+Thailand: 7
+Bolivia: 1
+Malta: 1
+Costa Rica: 2
+Russia: 27
+Vietnam: 4
+Sweden: 10
+Netherlands: 3
+Pakistan: 1
+Kosovo: 1
+Ireland: 2
+China: 94
+Poland: 12
+Serbia: 3
+Jordan: 1
+Bulgaria: 3
+France: 12
+Bosnia and Herzegovina: 2
+Tunisia: 3
+Kyrgyzstan: 1
+Croatia: 5
+Bhutan: 2
+Sri Lanka: 1
+Philippines: 16
+Uzbekistan: 2
+United Kingdom: 2
+French Polynesia: 1
+Spain: 3
+Liberia: 1
+Venezuela: 4
+Cuba: 2
+Azerbaijan: 1
+Czech Republic: 7
+Norway: 1
+Macao: 1
+Dominican Republic: 3
+Mexico: 1
+Zimbabwe: 1
+Uganda: 2
+Australia: 1
+Tajikistan: 1
+Indonesia: 53
+
+--- STATISTICS BY GENDER ---
+Agender: 1
+Bigender: 1
+Male: 12
+Female: 481
+Genderfluid: 1
+Genderqueer: 1
+===================================
