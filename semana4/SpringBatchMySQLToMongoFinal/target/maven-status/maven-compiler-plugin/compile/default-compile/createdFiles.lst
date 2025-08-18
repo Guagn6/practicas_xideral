@@ -1,0 +1,15 @@
+com\batch\config\TransaccionBatchConfig.class
+com\batch\persistence\mysql\IPersonMySQLRepository.class
+com\batch\steps\PersonItemProcessor.class
+com\batch\listeners\MigrationJobListener.class
+com\batch\SpringBatchApplicationInit.class
+com\batch\config\SwaggerConfig.class
+com\batch\config\DatabaseConfig.class
+com\batch\steps\PersonMySQLItemReader.class
+com\batch\service\PersonMigrationService.class
+com\batch\steps\PersonMongoDBItemWriter.class
+com\batch\entities\mysql\PersonMySQL.class
+com\batch\controller\MigrationTestController.class
+com\batch\entities\mongodb\PersonMongoDB.class
+com\batch\persistence\mongodb\IPersonMongoDBRepository.class
+com\batch\service\PersonMigrationService$MigrationStats.class

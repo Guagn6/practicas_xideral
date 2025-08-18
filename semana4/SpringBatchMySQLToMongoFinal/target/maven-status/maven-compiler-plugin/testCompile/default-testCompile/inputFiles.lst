@@ -1,0 +1,7 @@
+C:\IntelliJ_Projects\practicas_xideral\semana4\SpringBatchMySQLToMongoFinal\src\test\java\com\batch\config\BatchTestConfiguration.java
+C:\IntelliJ_Projects\practicas_xideral\semana4\SpringBatchMySQLToMongoFinal\src\test\java\com\batch\config\TransaccionBatchConfigTest.java
+C:\IntelliJ_Projects\practicas_xideral\semana4\SpringBatchMySQLToMongoFinal\src\test\java\com\batch\controller\MigrationTestControllerTest.java
+C:\IntelliJ_Projects\practicas_xideral\semana4\SpringBatchMySQLToMongoFinal\src\test\java\com\batch\listeners\MigrationJobListenerTest.java
+C:\IntelliJ_Projects\practicas_xideral\semana4\SpringBatchMySQLToMongoFinal\src\test\java\com\batch\steps\PersonItemProcessorTest.java
+C:\IntelliJ_Projects\practicas_xideral\semana4\SpringBatchMySQLToMongoFinal\src\test\java\com\batch\steps\PersonMongoDBItemWriterTest.java
+C:\IntelliJ_Projects\practicas_xideral\semana4\SpringBatchMySQLToMongoFinal\src\test\java\com\batch\steps\PersonMySQLItemReaderTest.java

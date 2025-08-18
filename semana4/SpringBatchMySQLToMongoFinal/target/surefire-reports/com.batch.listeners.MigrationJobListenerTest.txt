@@ -1,0 +1,190 @@
+-------------------------------------------------------------------------------
+Test set: com.batch.listeners.MigrationJobListenerTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 4, Errors: 6, Skipped: 0, Time elapsed: 0.361 s <<< FAILURE! -- in com.batch.listeners.MigrationJobListenerTest
+com.batch.listeners.MigrationJobListenerTest.shouldHandleNullStepExecutions -- Time elapsed: 0.171 s <<< ERROR!
+org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
+
+Unnecessary stubbings detected.
+Clean & maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -> at com.batch.listeners.MigrationJobListenerTest.setUp(MigrationJobListenerTest.java:40)
+  2. -> at com.batch.listeners.MigrationJobListenerTest.setUp(MigrationJobListenerTest.java:48)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+	at org.mockito.junit.jupiter.MockitoExtension.lambda$afterEach$2(MockitoExtension.java:200)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:198)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.batch.listeners.MigrationJobListenerTest.shouldCalculatePerformanceCorrectly -- Time elapsed: 0.023 s <<< FAILURE!
+org.mockito.exceptions.verification.TooManyActualInvocations: 
+
+jobExecution.getStartTime();
+Wanted 1 time:
+-> at org.springframework.batch.core.JobExecution.getStartTime(JobExecution.java:167)
+But was 2 times:
+-> at com.batch.listeners.MigrationJobListener.afterJob(MigrationJobListener.java:51)
+-> at com.batch.listeners.MigrationJobListener.afterJob(MigrationJobListener.java:52)
+
+
+	at org.springframework.batch.core.JobExecution.getStartTime(JobExecution.java:167)
+	at com.batch.listeners.MigrationJobListenerTest.shouldCalculatePerformanceCorrectly(MigrationJobListenerTest.java:205)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.batch.listeners.MigrationJobListenerTest.shouldHandleGeneralExceptionInAfterJob -- Time elapsed: 0.014 s <<< ERROR!
+org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
+
+Unnecessary stubbings detected.
+Clean & maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -> at com.batch.listeners.MigrationJobListenerTest.setUp(MigrationJobListenerTest.java:40)
+  2. -> at com.batch.listeners.MigrationJobListenerTest.setUp(MigrationJobListenerTest.java:48)
+  3. -> at com.batch.listeners.MigrationJobListenerTest.setUp(MigrationJobListenerTest.java:51)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+	at org.mockito.junit.jupiter.MockitoExtension.lambda$afterEach$2(MockitoExtension.java:200)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:198)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.batch.listeners.MigrationJobListenerTest.shouldGenerateCompleteReportForSuccessfulJob -- Time elapsed: 0.083 s <<< FAILURE!
+org.mockito.exceptions.verification.TooManyActualInvocations: 
+
+jobExecution.getStepExecutions();
+Wanted 1 time:
+-> at org.springframework.batch.core.JobExecution.getStepExecutions(JobExecution.java:241)
+But was 2 times:
+-> at com.batch.listeners.MigrationJobListener.afterJob(MigrationJobListener.java:93)
+-> at com.batch.listeners.MigrationJobListener.afterJob(MigrationJobListener.java:94)
+
+
+	at org.springframework.batch.core.JobExecution.getStepExecutions(JobExecution.java:241)
+	at com.batch.listeners.MigrationJobListenerTest.shouldGenerateCompleteReportForSuccessfulJob(MigrationJobListenerTest.java:114)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.batch.listeners.MigrationJobListenerTest.shouldSetupInitialStatsCorrectly -- Time elapsed: 0.008 s <<< ERROR!
+org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
+
+Unnecessary stubbings detected.
+Clean & maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -> at com.batch.listeners.MigrationJobListenerTest.setUp(MigrationJobListenerTest.java:50)
+  2. -> at com.batch.listeners.MigrationJobListenerTest.setUp(MigrationJobListenerTest.java:51)
+  3. -> at com.batch.listeners.MigrationJobListenerTest.setUp(MigrationJobListenerTest.java:52)
+  4. -> at com.batch.listeners.MigrationJobListenerTest.setUp(MigrationJobListenerTest.java:53)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+	at org.mockito.junit.jupiter.MockitoExtension.lambda$afterEach$2(MockitoExtension.java:200)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:198)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.batch.listeners.MigrationJobListenerTest.shouldHandleNullTimes -- Time elapsed: 0.013 s <<< FAILURE!
+Wanted but not invoked:
+jobExecution.getEndTime();
+-> at org.springframework.batch.core.JobExecution.getEndTime(JobExecution.java:143)
+
+However, there were exactly 9 interactions with this mock:
+jobExecution.getStartTime();
+-> at com.batch.listeners.MigrationJobListener.afterJob(MigrationJobListener.java:51)
+
+jobExecution.getExecutionContext();
+-> at com.batch.listeners.MigrationJobListener.afterJob(MigrationJobListener.java:69)
+
+jobExecution.getExecutionContext();
+-> at com.batch.listeners.MigrationJobListener.afterJob(MigrationJobListener.java:70)
+
+jobExecution.getId();
+-> at com.batch.listeners.MigrationJobListener.afterJob(MigrationJobListener.java:82)
+
+jobExecution.getStatus();
+-> at com.batch.listeners.MigrationJobListener.afterJob(MigrationJobListener.java:83)
+
+jobExecution.getExitStatus();
+-> at com.batch.listeners.MigrationJobListener.afterJob(MigrationJobListener.java:84)
+
+jobExecution.getStepExecutions();
+-> at com.batch.listeners.MigrationJobListener.afterJob(MigrationJobListener.java:93)
+
+jobExecution.getStepExecutions();
+-> at com.batch.listeners.MigrationJobListener.afterJob(MigrationJobListener.java:94)
+
+jobExecution.getStatus();
+-> at com.batch.listeners.MigrationJobListener.afterJob(MigrationJobListener.java:105)
+
+
+	at org.springframework.batch.core.JobExecution.getEndTime(JobExecution.java:143)
+	at com.batch.listeners.MigrationJobListenerTest.shouldHandleNullTimes(MigrationJobListenerTest.java:152)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.batch.listeners.MigrationJobListenerTest.shouldHandleFailedJobCorrectly -- Time elapsed: 0.009 s <<< FAILURE!
+org.mockito.exceptions.verification.TooManyActualInvocations: 
+
+jobExecution.getStatus();
+Wanted 1 time:
+-> at org.springframework.batch.core.JobExecution.getStatus(JobExecution.java:182)
+But was 2 times:
+-> at com.batch.listeners.MigrationJobListener.afterJob(MigrationJobListener.java:83)
+-> at com.batch.listeners.MigrationJobListener.afterJob(MigrationJobListener.java:105)
+
+
+	at org.springframework.batch.core.JobExecution.getStatus(JobExecution.java:182)
+	at com.batch.listeners.MigrationJobListenerTest.shouldHandleFailedJobCorrectly(MigrationJobListenerTest.java:133)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.batch.listeners.MigrationJobListenerTest.shouldHandleExceptionInFinalStats -- Time elapsed: 0.009 s <<< ERROR!
+org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
+
+Unnecessary stubbings detected.
+Clean & maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -> at com.batch.listeners.MigrationJobListenerTest.setUp(MigrationJobListenerTest.java:40)
+  2. -> at com.batch.listeners.MigrationJobListenerTest.setUp(MigrationJobListenerTest.java:48)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+	at org.mockito.junit.jupiter.MockitoExtension.lambda$afterEach$2(MockitoExtension.java:200)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:198)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.batch.listeners.MigrationJobListenerTest.shouldHandleExceptionInBeforeJob -- Time elapsed: 0.009 s <<< ERROR!
+org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
+
+Unnecessary stubbings detected.
+Clean & maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -> at com.batch.listeners.MigrationJobListenerTest.setUp(MigrationJobListenerTest.java:50)
+  2. -> at com.batch.listeners.MigrationJobListenerTest.setUp(MigrationJobListenerTest.java:51)
+  3. -> at com.batch.listeners.MigrationJobListenerTest.setUp(MigrationJobListenerTest.java:52)
+  4. -> at com.batch.listeners.MigrationJobListenerTest.setUp(MigrationJobListenerTest.java:53)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+	at org.mockito.junit.jupiter.MockitoExtension.lambda$afterEach$2(MockitoExtension.java:200)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:198)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.batch.listeners.MigrationJobListenerTest.shouldHandleContextWithoutInitialStats -- Time elapsed: 0.012 s <<< ERROR!
+org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
+
+Unnecessary stubbings detected.
+Clean & maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -> at com.batch.listeners.MigrationJobListenerTest.setUp(MigrationJobListenerTest.java:40)
+  2. -> at com.batch.listeners.MigrationJobListenerTest.setUp(MigrationJobListenerTest.java:48)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+	at org.mockito.junit.jupiter.MockitoExtension.lambda$afterEach$2(MockitoExtension.java:200)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:198)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

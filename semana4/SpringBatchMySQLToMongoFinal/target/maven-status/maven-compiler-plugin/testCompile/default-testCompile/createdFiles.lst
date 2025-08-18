@@ -1,0 +1,7 @@
+com\batch\config\BatchTestConfiguration.class
+com\batch\steps\PersonItemProcessorTest.class
+com\batch\controller\MigrationTestControllerTest.class
+com\batch\steps\PersonMongoDBItemWriterTest.class
+com\batch\steps\PersonMySQLItemReaderTest.class
+com\batch\config\TransaccionBatchConfigTest.class
+com\batch\listeners\MigrationJobListenerTest.class

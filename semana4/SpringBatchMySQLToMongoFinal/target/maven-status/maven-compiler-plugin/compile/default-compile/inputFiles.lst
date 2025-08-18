@@ -1,0 +1,14 @@
+C:\IntelliJ_Projects\practicas_xideral\semana4\SpringBatchMySQLToMongoFinal\src\main\java\com\batch\config\DatabaseConfig.java
+C:\IntelliJ_Projects\practicas_xideral\semana4\SpringBatchMySQLToMongoFinal\src\main\java\com\batch\config\SwaggerConfig.java
+C:\IntelliJ_Projects\practicas_xideral\semana4\SpringBatchMySQLToMongoFinal\src\main\java\com\batch\config\TransaccionBatchConfig.java
+C:\IntelliJ_Projects\practicas_xideral\semana4\SpringBatchMySQLToMongoFinal\src\main\java\com\batch\controller\MigrationTestController.java
+C:\IntelliJ_Projects\practicas_xideral\semana4\SpringBatchMySQLToMongoFinal\src\main\java\com\batch\entities\mongodb\PersonMongoDB.java
+C:\IntelliJ_Projects\practicas_xideral\semana4\SpringBatchMySQLToMongoFinal\src\main\java\com\batch\entities\mysql\PersonMySQL.java
+C:\IntelliJ_Projects\practicas_xideral\semana4\SpringBatchMySQLToMongoFinal\src\main\java\com\batch\listeners\MigrationJobListener.java
+C:\IntelliJ_Projects\practicas_xideral\semana4\SpringBatchMySQLToMongoFinal\src\main\java\com\batch\persistence\mongodb\IPersonMongoDBRepository.java
+C:\IntelliJ_Projects\practicas_xideral\semana4\SpringBatchMySQLToMongoFinal\src\main\java\com\batch\persistence\mysql\IPersonMySQLRepository.java
+C:\IntelliJ_Projects\practicas_xideral\semana4\SpringBatchMySQLToMongoFinal\src\main\java\com\batch\service\PersonMigrationService.java
+C:\IntelliJ_Projects\practicas_xideral\semana4\SpringBatchMySQLToMongoFinal\src\main\java\com\batch\SpringBatchApplicationInit.java
+C:\IntelliJ_Projects\practicas_xideral\semana4\SpringBatchMySQLToMongoFinal\src\main\java\com\batch\steps\PersonItemProcessor.java
+C:\IntelliJ_Projects\practicas_xideral\semana4\SpringBatchMySQLToMongoFinal\src\main\java\com\batch\steps\PersonMongoDBItemWriter.java
+C:\IntelliJ_Projects\practicas_xideral\semana4\SpringBatchMySQLToMongoFinal\src\main\java\com\batch\steps\PersonMySQLItemReader.java
